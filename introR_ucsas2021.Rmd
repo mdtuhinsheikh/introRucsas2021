@@ -22,9 +22,9 @@ knitr::opts_chunk$set(echo = FALSE)
 
 
 ## Getting Started
-- This workshop is a part of the [UConn Sports Analytics Symposium 2020](https://statds.org/events/ucsas2020/workshops.html).
-- The source codes and necessary documentations are available at the repository: (https://github.com/mdtuhinsheikh/introR_ucsas2020).
-- The workshop slides are available at the [link](https://mdtuhinsheikh.github.io/introR_ucsas2020/).
+- This workshop is a part of the [UConn Sports Analytics Symposium 2021](https://statds.org/events/ucsas2021/index.html).
+- The source codes and necessary documentations are available at the repository: (https://github.com/mdtuhinsheikh/introRucsas2021).
+- The workshop slides are available at the [link](https://mdtuhinsheikh.github.io/introRucsas2021/#1).
 - Prerequisites: 
   + [R](https://cran.r-project.org/) and [Rstudio](https://www.rstudio.com/products/rstudio/download/#download) have been installed.
 
@@ -56,13 +56,13 @@ knitr::opts_chunk$set(echo = FALSE)
 - Brief overview of "dplyr" package
 
 ## What is R?
-- R is a free software environment for statistical computing and graphics
+- R is a free software environment for statistical computing and graphics.
 - R is a full-featured statistical analysis package (like SAS, SPSS, etc.) that allows to:
-  + import, export, and manipulate data
-  + represent data graphically
-  + analyse and report
+  + import, export, and manipulate data,
+  + represent data graphically,
+  + analyse and report.
 - Why the Name "R"?
-  + Initial of the names of two originators: Ross Ihaka and Robert Gentleman
+  + Initial of the names of two originators: Ross Ihaka and Robert Gentleman.
 - More details: <https://www.r-project.org>.
 
 ## Why Learn R?
@@ -198,7 +198,7 @@ x[[2]]        # [1] 5 8 9
 ```
 
 ## Basic R data structure cont...
-- **Array**: multiply subscripted collection of data entries
+- **Array**: multiply subscripted collection of data entries.
 ```{r echo = TRUE, eval = FALSE}
 x <- array(1:12, dim = c(3,2,2))
 x[ , , 1] ##      [,1] [,2]
@@ -207,14 +207,14 @@ x[ , , 1] ##      [,1] [,2]
           ## [3,]    3    6
 ```
 
-- **Matrix:** two-dimensional array
+- **Matrix:** two-dimensional array.
 ```{r echo = TRUE, eval = TRUE}
 x <- matrix(1:6, nrow = 2)
 x
 ```
 
 ## Basic R data structure cont...
-- Let us learn arithmatic operations of matrix by solving the following quiz
+- Let us learn arithmatic operations of matrix by solving the following quiz.
 - **Quiz:** Let $A = \begin{bmatrix} 1 & 2 \\ 3 & 4  \end{bmatrix}$ and $B = \begin{bmatrix} 10 & 20 \\ 30 & 40  \end{bmatrix}$. 
   + What are the dimensions of $A$ and $B$?
   + Find the determinant of $A$ and $B$.
@@ -250,7 +250,7 @@ function_name <- function(arguments) {
   # Some operation
 }
 ```
-- Example: function of evaluating absolute value
+- Example: function of evaluating absolute value.
 ```{r echo = TRUE, eval = FALSE}
 find_abs <- function(x) {
   if (x > 0) {
@@ -291,7 +291,7 @@ while(i <= 5){
 
 
 ## Loop and condition cont...
-- Useful arithmatic operators and R syntax
+- Useful arithmatic operators and R syntax:
 
 | Operation   |  Syntax               |
 |-------------|-----------------------|
@@ -311,7 +311,7 @@ if (condition 1) {
   statement 2
 }
 ```
-- An example of **"for"** and **"if"** statements
+- An example of **"for"** and **"if"** statements.
 
 ```{r echo = TRUE, eval = FALSE}
 for(i in 1:5){
@@ -349,7 +349,7 @@ install.packages("package_name")
 ```{r echo = TRUE, eval = FALSE}
 library("package_name")
 ```
-- Example: install and load "Lahman" package
+- Example: install and load "Lahman" package.
 ```{r echo = TRUE, eval = FALSE}
 install.packages("Lahman")
 library(Lahman)
@@ -374,25 +374,25 @@ read.table(file = "location_of_file", header = TRUE)
 ```{r echo =TRUE, eval = FALSE}
 write.table(dataName, file = "location_of_file")
 ```
-- Some of the useful functions for reading and writing data
+- Some of the useful functions for reading and writing data.
 ```{r echo =TRUE, eval = FALSE}
 read.csv(), read.csv2(), write.csv(), write.csv2(), etc.
 ```
 
 ## Read data from a package
-- We already know how to search a dataset in a package
+- We already know how to search a dataset in a package.
 - To read a particular data from the package
 ```{r echo = TRUE, eval = FALSE}
 data("dataName", package = "package_name")
 ```
-- **Quiz:** Read "Batting" data from "Lahman" package
+- **Quiz:** Read "Batting" data from "Lahman" package.
 
 ## Read data from package cont...
 ```{r echo = TRUE, eval = FALSE}
 data("Batting", package = "Lahman")
 # the data will be loaded if no error shows
 ```
-- To learn about the variables
+- To learn about the variables:
 ```{r echo = TRUE, eval = FALSE}
 str(Batting)
 #'data.frame':	105861 obs. of  22 variables:
@@ -411,7 +411,7 @@ str(Batting)
 ## Read data from package cont...
 - More detailed description of the variables can be found at the [link](https://rdrr.io/cran/Lahman/man/Batting.html).
 - Using this example we will learn data frame and data management.
-- Display few rows of the data
+- Display few rows of the data:
 ```{r, echo = TRUE, eval = FALSE}
 head(Batting)
 #   playerID yearID stint teamID lgID  G  AB  R  H X2B X3B HR RBI ...
@@ -424,7 +424,7 @@ head(Batting)
 ```
 
 ## Basics of dataframe 
-- Indexing works similar to matrix
+- Indexing works similar to matrix.
 ```{r echo = TRUE, eval = FALSE}
 Batting[, 1:4]
 #    playerID yearID stint teamID
@@ -448,7 +448,7 @@ Batting[1:10, c("playerID", "yearID")]
 ```
 
 ## Basics of dataframe cont...
-- Create new variable
+- Create a new variable as follows.
 ```{r echo = TRUE, eval = FALSE}
 Batting$CS_SO <- with(Batting, CS + SO)
 head(Batting[, c("CS", "SO", "CS_SO")])
@@ -461,12 +461,12 @@ head(Batting[, c("CS", "SO", "CS_SO")])
 # 6  1  1     2
 ```
 ## Quiz on Batting data
-- Display data from 1871 only
-- Find the frequency of unique number of players, teams, and year information
+- Display data from 1871 only.
+- Find the frequency of unique number of players, teams, and year information.
 - Create a separate dataframe for year 1872 only.
 
 ## Quiz solution
-- Conditioning on the dataframe
+- Conditioning on the dataframe:
 ```{r echo = TRUE, eval = FALSE}
 Batting[Batting$yearID == "1871", ]   # Displays data from 1871 only
 # Displays data for aardsda01 from 1871
@@ -480,24 +480,24 @@ length(unique(Batting$yearID))          # [1] 148
 ```
 
 ## Quiz solution cont...
-- Alternative way: using **apply()** function
+- Alternative way: using **apply()** function.
 ```{r echo = TRUE, eval = FALSE}
 apply(Batting, 2, function(x) {length(unique(x))})
 # playerID   yearID    stint   teamID ...
 #    19428      148        5      149 ...
 ```
-- Create new dataframe
+- Create a new dataframe.
 ```{r echo = TRUE, eval = FALSE}
 Batting_1872 <- Batting[Batting$yearID == "1872", ]
 ```
 
 ## Data management using "dplyr" package
-- Requirements
+- Requirements:
 ```{r echo = TRUE, eval = FALSE}
 install.packages("dplyr")
 library(dplyr)
 ```
-- Let us read "Salary" data from "Lahman" package
+- Let us read "Salary" data from "Lahman" package.
 ```{r echo = TRUE, eval = FALSE}
 data("Salaries", package = "Lahman")
 head(Salaries)
@@ -511,7 +511,7 @@ head(Salaries)
 ```
 
 ## Data management using "dplyr" package cont...
-- Let us create a subset of "Salary" data without "lgID"
+- Create a subset of "Salary" data without "lgID".
 ```{r echo = TRUE, eval = FALSE}
 salaries <- Salaries %>%
              select(playerID, yearID, teamID, salary)
@@ -523,7 +523,7 @@ head(salaries)
 ```
 
 ## Data management using "dplyr" package cont...
-- We want to add salary info of the players in our Batting data
+- We want to add salary info of the players in our Batting data.
 ```{r echo = TRUE, eval = FALSE}
 batting <- left_join(Batting, salaries, 
                 by =c("playerID", "yearID", "teamID"))
@@ -534,7 +534,7 @@ mean(batting$salary, na.rm =  TRUE)
 ```
 
 ## Data management using "dplyr" package cont...
-- Arrange the data with respect to multiple variables in order
+- Arrange the data with respect to multiple variables in order.
 ```{r echo = TRUE, eval = FALSE}
 batting <- batting %>% arrange(playerID, yearID, stint)
 #   playerID yearID stint teamID lgID  ...  salary
@@ -550,7 +550,7 @@ batting <- batting %>% arrange(playerID, yearID, stint)
 - Arrange the eligible players by decreasing order of base on balls.
 
 ## Quiz solution
-- Filter the data with eiligible players after the year 1899 and with a minimum of 20 base on balls
+- Filter the data with eiligible players after the year 1899 and with a minimum of 20 base on balls.
 ```{r echo = TRUE, eval = FALSE}
 eligibleHitters <- batting %>%
                      filter(yearID >= 1900 & BB > 20)
