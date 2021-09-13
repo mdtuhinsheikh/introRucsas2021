@@ -3196,9 +3196,9 @@ slide:not(.current) .plotly.html-widget{
 <slide class=""><hgroup><h2>Getting Started</h2></hgroup><article  id="getting-started">
 
 <ul>
-<li>This workshop is a part of the <a href='https://statds.org/events/ucsas2020/workshops.html' title=''>UConn Sports Analytics Symposium 2020</a>.</li>
-<li>The source codes and necessary documentations are available at the repository: (<a href='https://github.com/mdtuhinsheikh/introR_ucsas2020' title=''>https://github.com/mdtuhinsheikh/introR_ucsas2020</a>).</li>
-<li>The workshop slides are available at the <a href='https://mdtuhinsheikh.github.io/introR_ucsas2020/' title=''>link</a>.</li>
+<li>This workshop is a part of the <a href='https://statds.org/events/ucsas2021/index.html' title=''>UConn Sports Analytics Symposium 2021</a>.</li>
+<li>The source codes and necessary documentations are available at the repository: (<a href='https://github.com/mdtuhinsheikh/introRucsas2021' title=''>https://github.com/mdtuhinsheikh/introRucsas2021</a>).</li>
+<li>The workshop slides are available at the <a href='https://mdtuhinsheikh.github.io/introRucsas2021/#1' title=''>link</a>.</li>
 <li>Prerequisites:
 
 <ul>
@@ -3254,18 +3254,18 @@ slide:not(.current) .plotly.html-widget{
 </article></slide><slide class=""><hgroup><h2>What is R?</h2></hgroup><article  id="what-is-r">
 
 <ul>
-<li>R is a free software environment for statistical computing and graphics</li>
+<li>R is a free software environment for statistical computing and graphics.</li>
 <li>R is a full-featured statistical analysis package (like SAS, SPSS, etc.) that allows to:
 
 <ul>
-<li>import, export, and manipulate data</li>
-<li>represent data graphically</li>
-<li>analyse and report</li>
+<li>import, export, and manipulate data,</li>
+<li>represent data graphically,</li>
+<li>analyse and report.</li>
 </ul></li>
 <li>Why the Name &ldquo;R&rdquo;?
 
 <ul>
-<li>Initial of the names of two originators: Ross Ihaka and Robert Gentleman</li>
+<li>Initial of the names of two originators: Ross Ihaka and Robert Gentleman.</li>
 </ul></li>
 <li>More details: <a href='https://www.r-project.org' title=''>https://www.r-project.org</a>.</li>
 </ul>
@@ -3461,7 +3461,7 @@ x[[2]]        # [1] 5 8 9</pre>
 </article></slide><slide class=""><hgroup><h2>Basic R data structure cont…</h2></hgroup><article  id="basic-r-data-structure-cont-1">
 
 <ul>
-<li><strong>Array</strong>: multiply subscripted collection of data entries</li>
+<li><strong>Array</strong>: multiply subscripted collection of data entries.</li>
 </ul>
 
 <pre class = 'prettyprint lang-r'>x &lt;- array(1:12, dim = c(3,2,2))
@@ -3471,7 +3471,7 @@ x[ , , 1] ##      [,1] [,2]
           ## [3,]    3    6</pre>
 
 <ul>
-<li><strong>Matrix:</strong> two-dimensional array</li>
+<li><strong>Matrix:</strong> two-dimensional array.</li>
 </ul>
 
 <pre class = 'prettyprint lang-r'>x &lt;- matrix(1:6, nrow = 2)
@@ -3484,7 +3484,7 @@ x</pre>
 </article></slide><slide class=""><hgroup><h2>Basic R data structure cont…</h2></hgroup><article  id="basic-r-data-structure-cont-2">
 
 <ul>
-<li>Let us learn arithmatic operations of matrix by solving the following quiz</li>
+<li>Let us learn arithmatic operations of matrix by solving the following quiz.</li>
 <li><strong>Quiz:</strong> Let \(A = \begin{bmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{bmatrix}\) and \(B = \begin{bmatrix} 10 &amp; 20 \\ 30 &amp; 40 \end{bmatrix}\).
 
 <ul>
@@ -3534,7 +3534,7 @@ solve(B)</pre>
 }</pre>
 
 <ul>
-<li>Example: function of evaluating absolute value</li>
+<li>Example: function of evaluating absolute value.</li>
 </ul>
 
 <pre class = 'prettyprint lang-r'>find_abs &lt;- function(x) {
@@ -3580,7 +3580,7 @@ while(i &lt;= 5){
 </article></slide><slide class=""><hgroup><h2>Loop and condition cont…</h2></hgroup><article  id="loop-and-condition-cont">
 
 <ul>
-<li>Useful arithmatic operators and R syntax</li>
+<li>Useful arithmatic operators and R syntax:</li>
 </ul>
 
 <table class = 'rmdtable'>
@@ -3627,7 +3627,7 @@ while(i &lt;= 5){
 }</pre>
 
 <ul>
-<li>An example of <strong>&ldquo;for&rdquo;</strong> and <strong>&ldquo;if&rdquo;</strong> statements</li>
+<li>An example of <strong>&ldquo;for&rdquo;</strong> and <strong>&ldquo;if&rdquo;</strong> statements.</li>
 </ul>
 
 <pre class = 'prettyprint lang-r'>for(i in 1:5){
@@ -3674,7 +3674,7 @@ if (dim(A)[2] == dim(B)[1]){
 <pre class = 'prettyprint lang-r'>library(&quot;package_name&quot;)</pre>
 
 <ul>
-<li>Example: install and load &ldquo;Lahman&rdquo; package</li>
+<li>Example: install and load &ldquo;Lahman&rdquo; package.</li>
 </ul>
 
 <pre class = 'prettyprint lang-r'>install.packages(&quot;Lahman&quot;)
@@ -3709,7 +3709,7 @@ library(Lahman)</pre>
 <pre class = 'prettyprint lang-r'>write.table(dataName, file = &quot;location_of_file&quot;)</pre>
 
 <ul>
-<li>Some of the useful functions for reading and writing data</li>
+<li>Some of the useful functions for reading and writing data.</li>
 </ul>
 
 <pre class = 'prettyprint lang-r'>read.csv(), read.csv2(), write.csv(), write.csv2(), etc.</pre>
@@ -3717,14 +3717,14 @@ library(Lahman)</pre>
 </article></slide><slide class=""><hgroup><h2>Read data from a package</h2></hgroup><article  id="read-data-from-a-package">
 
 <ul>
-<li>We already know how to search a dataset in a package</li>
+<li>We already know how to search a dataset in a package.</li>
 <li>To read a particular data from the package</li>
 </ul>
 
 <pre class = 'prettyprint lang-r'>data(&quot;dataName&quot;, package = &quot;package_name&quot;)</pre>
 
 <ul>
-<li><strong>Quiz:</strong> Read &ldquo;Batting&rdquo; data from &ldquo;Lahman&rdquo; package</li>
+<li><strong>Quiz:</strong> Read &ldquo;Batting&rdquo; data from &ldquo;Lahman&rdquo; package.</li>
 </ul>
 
 </article></slide><slide class=""><hgroup><h2>Read data from package cont…</h2></hgroup><article  id="read-data-from-package-cont">
@@ -3733,7 +3733,7 @@ library(Lahman)</pre>
 # the data will be loaded if no error shows</pre>
 
 <ul>
-<li>To learn about the variables</li>
+<li>To learn about the variables:</li>
 </ul>
 
 <pre class = 'prettyprint lang-r'>str(Batting)
@@ -3754,7 +3754,7 @@ library(Lahman)</pre>
 <ul>
 <li>More detailed description of the variables can be found at the <a href='https://rdrr.io/cran/Lahman/man/Batting.html' title=''>link</a>.</li>
 <li>Using this example we will learn data frame and data management.</li>
-<li>Display few rows of the data</li>
+<li>Display few rows of the data:</li>
 </ul>
 
 <pre class = 'prettyprint lang-r'>head(Batting)
@@ -3769,7 +3769,7 @@ library(Lahman)</pre>
 </article></slide><slide class=""><hgroup><h2>Basics of dataframe</h2></hgroup><article  id="basics-of-dataframe">
 
 <ul>
-<li>Indexing works similar to matrix</li>
+<li>Indexing works similar to matrix.</li>
 </ul>
 
 <pre class = 'prettyprint lang-r'>Batting[, 1:4]
@@ -3797,7 +3797,7 @@ Batting[1:10, c(&quot;playerID&quot;, &quot;yearID&quot;)]
 </article></slide><slide class=""><hgroup><h2>Basics of dataframe cont…</h2></hgroup><article  id="basics-of-dataframe-cont-1">
 
 <ul>
-<li>Create new variable</li>
+<li>Create a new variable as follows.</li>
 </ul>
 
 <pre class = 'prettyprint lang-r'>Batting$CS_SO &lt;- with(Batting, CS + SO)
@@ -3813,15 +3813,15 @@ head(Batting[, c(&quot;CS&quot;, &quot;SO&quot;, &quot;CS_SO&quot;)])
 </article></slide><slide class=""><hgroup><h2>Quiz on Batting data</h2></hgroup><article  id="quiz-on-batting-data">
 
 <ul>
-<li>Display data from 1871 only</li>
-<li>Find the frequency of unique number of players, teams, and year information</li>
+<li>Display data from 1871 only.</li>
+<li>Find the frequency of unique number of players, teams, and year information.</li>
 <li>Create a separate dataframe for year 1872 only.</li>
 </ul>
 
 </article></slide><slide class=""><hgroup><h2>Quiz solution</h2></hgroup><article  id="quiz-solution-3">
 
 <ul>
-<li>Conditioning on the dataframe</li>
+<li>Conditioning on the dataframe:</li>
 </ul>
 
 <pre class = 'prettyprint lang-r'>Batting[Batting$yearID == &quot;1871&quot;, ]   # Displays data from 1871 only
@@ -3839,7 +3839,7 @@ length(unique(Batting$yearID))          # [1] 148</pre>
 </article></slide><slide class=""><hgroup><h2>Quiz solution cont…</h2></hgroup><article  id="quiz-solution-cont-1">
 
 <ul>
-<li>Alternative way: using <strong>apply()</strong> function</li>
+<li>Alternative way: using <strong>apply()</strong> function.</li>
 </ul>
 
 <pre class = 'prettyprint lang-r'>apply(Batting, 2, function(x) {length(unique(x))})
@@ -3847,7 +3847,7 @@ length(unique(Batting$yearID))          # [1] 148</pre>
 #    19428      148        5      149 ...</pre>
 
 <ul>
-<li>Create new dataframe</li>
+<li>Create a new dataframe.</li>
 </ul>
 
 <pre class = 'prettyprint lang-r'>Batting_1872 &lt;- Batting[Batting$yearID == &quot;1872&quot;, ]</pre>
@@ -3855,14 +3855,14 @@ length(unique(Batting$yearID))          # [1] 148</pre>
 </article></slide><slide class=""><hgroup><h2>Data management using &ldquo;dplyr&rdquo; package</h2></hgroup><article  id="data-management-using-dplyr-package">
 
 <ul>
-<li>Requirements</li>
+<li>Requirements:</li>
 </ul>
 
 <pre class = 'prettyprint lang-r'>install.packages(&quot;dplyr&quot;)
 library(dplyr)</pre>
 
 <ul>
-<li>Let us read &ldquo;Salary&rdquo; data from &ldquo;Lahman&rdquo; package</li>
+<li>Let us read &ldquo;Salary&rdquo; data from &ldquo;Lahman&rdquo; package.</li>
 </ul>
 
 <pre class = 'prettyprint lang-r'>data(&quot;Salaries&quot;, package = &quot;Lahman&quot;)
@@ -3878,7 +3878,7 @@ head(Salaries)
 </article></slide><slide class=""><hgroup><h2>Data management using &ldquo;dplyr&rdquo; package cont…</h2></hgroup><article  id="data-management-using-dplyr-package-cont">
 
 <ul>
-<li>Let us create a subset of &ldquo;Salary&rdquo; data without &ldquo;lgID&rdquo;</li>
+<li>Create a subset of &ldquo;Salary&rdquo; data without &ldquo;lgID&rdquo;.</li>
 </ul>
 
 <pre class = 'prettyprint lang-r'>salaries &lt;- Salaries %&gt;%
@@ -3892,7 +3892,7 @@ head(salaries)
 </article></slide><slide class=""><hgroup><h2>Data management using &ldquo;dplyr&rdquo; package cont…</h2></hgroup><article  id="data-management-using-dplyr-package-cont-1">
 
 <ul>
-<li>We want to add salary info of the players in our Batting data</li>
+<li>We want to add salary info of the players in our Batting data.</li>
 </ul>
 
 <pre class = 'prettyprint lang-r'>batting &lt;- left_join(Batting, salaries, 
@@ -3907,7 +3907,7 @@ head(salaries)
 </article></slide><slide class=""><hgroup><h2>Data management using &ldquo;dplyr&rdquo; package cont…</h2></hgroup><article  id="data-management-using-dplyr-package-cont-2">
 
 <ul>
-<li>Arrange the data with respect to multiple variables in order</li>
+<li>Arrange the data with respect to multiple variables in order.</li>
 </ul>
 
 <pre class = 'prettyprint lang-r'>batting &lt;- batting %&gt;% arrange(playerID, yearID, stint)
@@ -3929,7 +3929,7 @@ head(salaries)
 </article></slide><slide class=""><hgroup><h2>Quiz solution</h2></hgroup><article  id="quiz-solution-4">
 
 <ul>
-<li>Filter the data with eiligible players after the year 1899 and with a minimum of 20 base on balls</li>
+<li>Filter the data with eiligible players after the year 1899 and with a minimum of 20 base on balls.</li>
 </ul>
 
 <pre class = 'prettyprint lang-r'>eligibleHitters &lt;- batting %&gt;%
