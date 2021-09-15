@@ -7,12 +7,6 @@ output:
   ioslides_presentation:
     css: style.css
     widescreen: true
-#font-family: 'Helvetica'
-#css: custom.css
-#output: slidy_presentation
-#footer: "UCSAS 2019"
-#output: rmarkdown::github_document
-#output: revealjs::revealjs_presentation
 ---
 
 
