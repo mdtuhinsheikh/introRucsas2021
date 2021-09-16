@@ -3,4 +3,4 @@ This repository contains the slides and source codes for the `Introduction to R`
 
 For the slides, please visit the link: https://mdtuhinsheikh.github.io/introRucsas2021/.
 
-The file named "Rcodes_ucsas2021.R" contains all the sources codes required for this workshop. 
+The file named ["Rcodes_ucsas2021.R"](https://github.com/mdtuhinsheikh/introRucsas2021/blob/main/Rcodes_ucsas2021.R) contains all the sources codes required for this workshop. 
